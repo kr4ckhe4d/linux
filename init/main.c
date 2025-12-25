@@ -917,6 +917,10 @@ void start_kernel(void)
 	char *command_line;
 	char *after_dashes;
 
+	pr_info("###################################################\n");
+    pr_info("NIPUNA WAS HERE: Kernel is booting up!\n");
+    pr_info("###################################################\n");
+
 	set_task_stack_end_magic(&init_task);
 	smp_setup_processor_id();
 	debug_objects_early_init();
